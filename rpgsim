@@ -1,0 +1,135 @@
+if game.PlaceId == 2990100290 then
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+-- value
+getgenv().autoskill1 = true
+getgenv().autoskill2 = true
+getgenv().autoskill3 = true
+getgenv().autoslash = true
+-- function
+ function autoskill1()
+    while getgenv().autoskill1 == true do
+    wait(0.1)
+local args = {
+    [1] = "Skill",
+    [2] = "Skill1",
+    [3] = "Attack"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("attack"):FireServer(unpack(args))
+    end
+  end
+
+function autoskill2()
+    while getgenv().autoskill2 == true do
+    wait(0.1)
+      local args = {
+    [1] = "Skill",
+    [2] = "Skill2",
+    [3] = "Attack"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("attack"):FireServer(unpack(args))
+    end
+  end
+ 
+function autoskill3()
+    while getgenv().autoskill3 == true do
+    wait(0.1)
+      local args = {
+    [1] = "Skill",
+    [2] = "Skill3",
+    [3] = "Attack"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("attack"):FireServer(unpack(args))
+    end
+  end
+
+function autoslash()
+    while getgenv().autoslash == true do
+    wait(0.1)
+local args = {
+    [1] = "Slash"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("attack"):FireServer(unpack(args))
+    end
+  end
+
+local Window = Rayfield:CreateWindow({
+   Name = "CET",
+   LoadingTitle = "THEM BU LOL QUA",
+   LoadingSubtitle = "by AngCet",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = AngCet, -- Create a custom folder for your hub/game
+      FileName = "OK"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"Hello"}
+   }
+})
+-- tabs
+local Tab = Window:CreateTab("Test", 4483362458)
+-- toggle
+local Toggle = Test Tab:CreateToggle({
+   Name = "AutoSkill1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       getgenv().autoskill1 = Value
+       autoskill1()
+    end,
+})
+
+local Toggle = Test Tab:CreateToggle({
+   Name = "AutoSkill2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       getgenv().autoskill2 = Value
+       autoskill2()
+    end,
+})
+
+local Toggle = Test Tab:CreateToggle({
+   Name = "AutoSkill3",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       getgenv().autoskill3 = Value
+       autoskill3()
+    end,
+})
+
+local Toggle = Test Tab:CreateToggle({
+   Name = "AutoSlash",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+       getgenv().autoslash = Value
+       autoslash()
+    end,
+})
+  
+  local Button =  Test Tab:CreateButton({
+   Name = "Anti Afk",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
+   end,
+})
+  end
+Rayfield:LoadConfiguration()
