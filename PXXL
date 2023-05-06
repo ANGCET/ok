@@ -147,6 +147,21 @@ local Button = CetTab:CreateButton({
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
+
+local Button = CetTab:CreateButton({
+   Name = "Chest Farming",
+   Callback = function()
+local Working = true
+Chests = game:GetService("Workspace").Chests:GetChildren()
+for i = 1, #Chests do
+    local v = Chests[i]
+    if v.Transparency == 0 and Working then
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+        task.wait(.3)
+          end
+        end
+      end,
+})
   
 -- keybinds
   local Keybind = Tab:CreateKeybind({
