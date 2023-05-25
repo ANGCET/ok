@@ -1,0 +1,133 @@
+if game.PlaceId == 10764017846 then
+
+getgenv().SecureMode = true
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- value
+
+getgenv().autoskill = true
+
+-- functions
+
+local function autoskill()
+
+  while getgenv().autoskill == true do
+
+   wait(0.2)
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("The Void").realityBreaker.start:FireServer()
+
+  end
+
+end
+
+local Window = Rayfield:CreateWindow({
+
+   Name = "Cet Hub",
+
+   LoadingTitle = "Rayfield",
+
+   LoadingSubtitle = "by AngCet",
+
+   ConfigurationSaving = {
+
+      Enabled = true,
+
+      FolderName = PXXL, 
+
+      FileName = "Cet"
+
+},
+
+   Discord = {
+
+      Enabled = false,
+
+      Invite = "noinvitelink",
+
+      RememberJoins = true
+
+   },
+
+   KeySystem = false,
+
+      KeySettings = {
+
+      Title = "WSP",
+
+      Subtitle = "Key System",
+
+      Note = "No method of obtaining the key is provided",
+
+     FileName = "Key",
+
+      SaveKey = true,
+
+      GrabKeyFromSite = false,
+
+      Key = {"Hello"}
+
+   }
+
+})
+
+-- toggles
+
+local Tab = Window:CreateTab("CetTab", 4483362458) -- Title, Image
+
+local Toggle = Cet Tab:CreateToggle({
+
+   Name = "Auto Skill",
+
+   CurrentValue = false,
+
+   Flag = "Toggle1", 
+
+   Callback = function(Value)
+
+      getgenv().autoskill = Value
+
+      autoskill()
+
+    end,
+
+})
+
+local Button = Cet Tab:CreateButton({
+
+   Name = "Mines",
+
+   Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54667.3555, -129.608383, -27.3502941, -0.0797592476, -1.03556083e-07, -0.996814132, 2.7738599e-08, 1, -1.06106526e-07, 0.996814132, -3.61132066e-08, -0.0797592476)
+
+   end,
+
+})
+
+local Button = Cet Tab:CreateButton({
+
+   Name = "Advanced Mines",
+
+   Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54655.2539, -209.608398, -33.8260307, 0.727115989, 1.2511105e-08, 0.686514616, 5.35012283e-08, 1, -7.48894564e-08, -0.686514616, 9.11826987e-08, 0.727115989)
+
+   end,
+
+})
+
+local Button = Cet Tab:CreateButton({
+
+   Name = "Deep Mines",
+
+   Callback = function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54671.2188, -289.658417, -20.729723, -0.00162478676, -7.17696622e-08, 0.999998689, 1.24934818e-08, 1, 7.17900548e-08, -0.999998689, 1.26101085e-08, -0.00162478676)
+
+   end,
+
+})
+
+end
