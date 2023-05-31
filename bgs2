@@ -1,0 +1,147 @@
+if game.PlaceId == 13303500921 then
+
+getgenv().SecureMode = true
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- value
+
+getgenv().autoclick = true
+
+getgenv().autosegg = true
+
+-- functions
+
+local function autoclick()
+
+  while getgenv().autoclick == true do
+
+   wait(0.2)
+
+local args = {
+
+    [1] = "BlowBubble"
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("2346421357Event"):FireServer(unpack(args))
+
+    end
+
+  end
+
+local function autoegg()
+
+ while getgenv().autoegg == true do
+
+  wait(0.1)
+
+local args = {
+
+    [1] = "PurchaseEgg",
+
+    [2] = "500k Egg",
+
+    [3] = "Multi"
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("2346421357Event"):FireServer(unpack(args))
+
+    end
+
+  end
+
+local Window = Rayfield:CreateWindow({
+
+   Name = "Cet Hub",
+
+   LoadingTitle = "Rayfield",
+
+   LoadingSubtitle = "by AngCet",
+
+   ConfigurationSaving = {
+
+      Enabled = true,
+
+      FolderName = PXXL, 
+
+      FileName = "Cet"
+
+},
+
+   Discord = {
+
+      Enabled = false,
+
+      Invite = "noinvitelink",
+
+      RememberJoins = true
+
+   },
+
+   KeySystem = false,
+
+      KeySettings = {
+
+      Title = "WSP",
+
+      Subtitle = "Key System",
+
+      Note = "No method of obtaining the key is provided",
+
+     FileName = "Key",
+
+      SaveKey = true,
+
+      GrabKeyFromSite = false,
+
+      Key = {"Hello"}
+
+   }
+
+})
+
+-- toggles
+
+local Tab = Window:CreateTab("CetTab", 4483362458) -- Title, Image
+
+local Toggle = Cet Tab:CreateToggle({
+
+   Name = "Auto Click",
+
+   CurrentValue = false,
+
+   Flag = "Toggle1", 
+
+   Callback = function(Value)
+
+      getgenv().autoclicl = Value
+
+      autoclick()
+
+    end,
+
+})
+
+local Toggle = Cet Tab:CreateToggle({
+
+   Name = "Auto Egg",
+
+   CurrentValue = false,
+
+   Flag = "Toggle1", 
+
+   Callback = function(Value)
+
+      getgenv().autoegg = Value
+
+      autoegg()
+
+    end,
+
+})
+
+  
+
+end
