@@ -1,4 +1,4 @@
-if game.PlaceId == 14288176792 or game.PlaceId == 15030260251 then
+if game.PlaceId == 9566949295 or game.PlaceId == 15030260251 then
 
 if game.CoreGui:FindFirstChild("SOMEXHUBMODILE") then
     game.CoreGui:FindFirstChild("SOMEXHUBMODILE"):Destroy()
