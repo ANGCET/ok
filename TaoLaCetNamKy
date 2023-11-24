@@ -272,7 +272,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
-end
+  end
 end
 
 function AutoUpgradeAbility()
@@ -283,7 +283,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
-end
+  end
 end
 
 --tabs 1
