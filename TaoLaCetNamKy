@@ -1,0 +1,462 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "gai xinh cug phai di ia", HidePremium = false, IntroText = "nuh uh", IntroIcon = "rbxassetid://4483345998",   SaveConfig = false, ConfigFolder = "CetTest"})
+--value
+_G.Blyke1 = true
+_G.Blyke2 = true
+_G.Lin1 = true
+_G.Lin2 = true
+_G.Remi1 = true
+_G.Remi2 = true
+_G.Rein1 = true
+_G.Rein2 = true
+_G.Broven1 = true
+_G.Broven2 = true
+_G.Gavin1 = true
+_G.Gavin2 = true
+_G.Elaine1 = true
+_G.Elaine2 = true
+_G.Zeke1 = true
+_G.Zeke2 = true
+_G.Rei1 = true
+_G.Rei2 = true
+_G.Arlo1 = true
+_G.Arlo2 = true
+--function
+function Blyke1()
+while _G.Blyke1 == true do 
+    task.wait(0.00001)
+local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Blyke")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Blyke2()
+while _G.Blyke2 == true do
+    task.wait(0.00001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Blyke" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Lin1()
+while _G.Lin1 == true do
+    task.wait(0.00001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Lin")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Lin2()
+while _G.Lin2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Lin" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Remi1()
+while _G.Remi1 == true do
+    task.wait(0.00001)
+local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Remi")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Remi2()
+while _G.Remi2 == true do
+    task.wait(0.00001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Remi" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Rein1()
+while _G.Rein1 == true do
+    task.wait(0.0001)
+local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Rein")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Rein2()
+while _G.Rein2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Rein" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Broven1()
+while _G.Broven1 == true do
+    task.wait(0.0001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Broven")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Broven2()
+while _G.Broven2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Broven" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Gavin1()
+while _G.Gavin1 == true do
+    task.wait(0.0001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Gavin")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Gavin2()
+while _G.Gavin2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Gavin" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Elaine1()
+while _G.Elaine1 == true do
+    task.wait(0.001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Elaine")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Elaine2()
+while _G.Elaine2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Elaine" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Zeke1()
+while _G.Zeke1 == true do
+    task.wait(0.0001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Zeke")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Zeke2()
+while _G.Zeke2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Zeke" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Rei1()
+while _G.Rei1 == true do
+    task.wait(0.0001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Rei")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Rei2()
+while _G.Rei2() == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Rei" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Arlo1()
+while _G.Arlo1 == true do
+    task.wait(0.0001)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Arlo")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Arlo2()
+while _G.Arlo2 == true do
+    task.wait(0.0001)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Arlo" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+  
+
+--tabs 1
+local Tab = Window:MakeTab({
+	Name = "cac",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Blyke1",
+	Default = false,
+	Callback = function(Value)
+		_G.Blyke1 = Value
+      Blyke1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Blyke2",
+	Default = false,
+	Callback = function(Value)
+		_G.Blyke2 = Value
+      Blyke2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Lin1",
+	Default = false,
+	Callback = function(Value)
+		_G.Lin1 = Value
+      Lin1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Lin1",
+	Default = false,
+	Callback = function(Value)
+		_G.Lin2 = Value
+      Lin2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Remi1",
+	Default = false,
+	Callback = function(Value)
+		_G.Remi1 = Value
+      Remi1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Remi2",
+	Default = false,
+	Callback = function(Value)
+		_G.Remi2 = Value
+      Remi2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Rein1",
+	Default = false,
+	Callback = function(Value)
+		_G.Rein1 = Value
+      Rein1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Rein2",
+	Default = false,
+	Callback = function(Value)
+		_G.Rein2 = Value
+      Rein2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Broven1",
+	Default = false,
+	Callback = function(Value)
+		_G.Broven1 = Value
+      Broven1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Broven2",
+	Default = false,
+	Callback = function(Value)
+		_G.Broven2 = Value
+      Broven2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Gavin1",
+	Default = false,
+	Callback = function(Value)
+		_G.Gavin1 = Value
+      Gavin1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Gavin2",
+	Default = false,
+	Callback = function(Value)
+		_G.Gavin2 = Value
+      Gavin2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Elaine1",
+	Default = false,
+	Callback = function(Value)
+		_G.Elaine1 = Value
+      Elaine1()
+	end
+})
+
+
+Tab:AddToggle({
+	Name = "Elaine2",
+	Default = false,
+	Callback = function(Value)
+		_G.Elaine2 = Value
+      Elaine2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Zeke1",
+	Default = false,
+	Callback = function(Value)
+		_G.Zeke1 = Value
+      Zeke1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Zeke2",
+	Default = false,
+	Callback = function(Value)
+		_G.Zeke2 = Value
+      Zeke2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Rei1",
+	Default = false,
+	Callback = function(Value)
+		_G.Rei1 = Value
+      Rei1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Rei2",
+	Default = false,
+	Callback = function(Value)
+		_G.Rei2 = Value
+      Rei2()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Arlo1",
+	Default = false,
+	Callback = function(Value)
+		_G.Arlo1 = Value
+      Arlo1()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Arlo2",
+	Default = false,
+	Callback = function(Value)
+		_G.Arlo2 = Value
+      Arlo2()
+	end
+})
+
+
+--tabs 2
+local Tab = Window:MakeTab({
+	Name = "lol",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:Init()
