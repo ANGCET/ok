@@ -21,8 +21,8 @@ _G.Rei1 = true
 _G.Rei2 = true
 _G.Arlo1 = true
 _G.Arlo2 = true
-_G.AutoUpgradeStrength
-_G.AutoUpgradeAbility
+_G.AutoUpgradeStrength = true
+_G.AutoUpgradeAbility = true
 --function
 function Blyke1()
 while _G.Blyke1 == true do 
@@ -272,7 +272,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
-end
+  end
 end
 
 function AutoUpgradeAbility()
@@ -283,7 +283,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
-end
+  end
 end
 
 --tabs 1
