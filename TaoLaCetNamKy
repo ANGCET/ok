@@ -474,14 +474,6 @@ Tab:AddToggle({
 	end
 })
 
-
---tabs 2
-local Tab = Window:MakeTab({
-	Name = "lol",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 Tab:AddToggle({
 	Name = "Auto Upgrade Strength",
 	Default = false,
