@@ -21,6 +21,8 @@ _G.Rei1 = true
 _G.Rei2 = true
 _G.Arlo1 = true
 _G.Arlo2 = true
+_G.AutoUpgradeStrength
+_G.AutoUpgradeAbility
 --function
 function Blyke1()
 while _G.Blyke1 == true do 
@@ -262,6 +264,27 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damag
   end
 end
   
+function AutoUpgradeStrength()
+while _G.AutoUpgradeStrength == true do
+    task.wait(0.1)
+local args = {
+    [1] = "UpgradeStrength"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
+end
+end
+
+function AutoUpgradeAbility()
+while _G.AutoUpgradeAbility == true do
+    task.wait(0.1)
+local args = {
+    [1] = "UpgradeAbility"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Interact"):FireServer(unpack(args))
+end
+end
 
 --tabs 1
 local Tab = Window:MakeTab({
@@ -457,6 +480,24 @@ local Tab = Window:MakeTab({
 	Name = "lol",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Auto Upgrade Strength",
+	Default = false,
+	Callback = function(Value)
+		_G.AutoUpgradeStrength = Value
+      AutoUpgradeStrength()
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto Upgrade Ability",
+	Default = false,
+	Callback = function(Value)
+		_G.AutoUpgradeAbility = Value
+      AutoUpgradeAbility()
+	end
 })
 
 OrionLib:Init()
