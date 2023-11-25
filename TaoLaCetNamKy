@@ -30,7 +30,7 @@ local MainSection = MainTab:CreateSection("Main")
 
 function Blyke1()
 while _G.Blyke1 == true do
-    task.wait(0.00001)
+    task.wait(0.1)
 local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Blyke")
 }
@@ -41,7 +41,7 @@ end
 
 function Blyke2()
 while _G.Blyke2 == true do
-    task.wait(0.00001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -54,7 +54,7 @@ end
 
 function Lin1()
 while _G.Lin1 == true do
-    task.wait(0.00001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Lin")
 }
@@ -65,7 +65,7 @@ end
 
 function Lin2()
 while _G.Lin2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -78,7 +78,7 @@ end
 
 function Remi1()
 while _G.Remi1 == true do
-    task.wait(0.00001)
+    task.wait(0.1)
 local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Remi")
 }
@@ -89,7 +89,7 @@ end
 
 function Remi2()
 while _G.Remi2 == true do
-    task.wait(0.00001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -102,7 +102,7 @@ end
 
 function Rein1()
 while _G.Rein1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
 local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Rein")
 }
@@ -113,7 +113,7 @@ end
 
 function Rein2()
 while _G.Rein2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -126,7 +126,7 @@ end
 
 function Broven1()
 while _G.Broven1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Broven")
 }
@@ -137,7 +137,7 @@ end
 
 function Broven2()
 while _G.Broven2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -150,7 +150,7 @@ end
 
 function Gavin1()
 while _G.Gavin1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Gavin")
 }
@@ -161,7 +161,7 @@ end
 
 function Gavin2()
 while _G.Gavin2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -174,7 +174,7 @@ end
 
 function Elaine1()
 while _G.Elaine1 == true do
-    task.wait(0.001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Elaine")
 }
@@ -185,7 +185,7 @@ end
 
 function Elaine2()
 while _G.Elaine2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -198,7 +198,7 @@ end
 
 function Zeke1()
 while _G.Zeke1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Zeke")
 }
@@ -209,7 +209,7 @@ end
 
 function Zeke2()
 while _G.Zeke2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -222,7 +222,7 @@ end
 
 function Rei1()
 while _G.Rei1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Rei")
 }
@@ -233,7 +233,7 @@ end
 
 function Rei2()
 while _G.Rei2() == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -246,7 +246,7 @@ end
 
 function Arlo1()
 while _G.Arlo1 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Arlo")
 }
@@ -257,7 +257,7 @@ end
 
 function Arlo2()
 while _G.Arlo2 == true do
-    task.wait(0.0001)
+    task.wait(0.1)
     function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
 
 local args = {
@@ -494,7 +494,7 @@ local MiscSection = MainTab:CreateSection("Misc")
 
 function AutoStrength()
 while _G.AutoStrength == true do
-    task.wait(0.001)
+    task.wait(0.01)
     local args = {
     [1] = "UpgradeStrength"
 }
@@ -505,7 +505,7 @@ end
 
 function AutoAbility()
 while _G.AutoAbility == true do
-    task.wait(0.0001)
+    task.wait(0.01)
     local args = {
     [1] = "UpgradeAbility"
 }
