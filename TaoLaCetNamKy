@@ -1,31 +1,35 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toi La Cet", HidePremium = false, IntroText = "nuh uh", IntroIcon = "rbxassetid://14658382428",   SaveConfig = false, ConfigFolder = "CetTest"})
---value
-_G.Blyke1 = true
-_G.Blyke2 = true
-_G.Lin1 = true
-_G.Lin2 = true
-_G.Remi1 = true
-_G.Remi2 = true
-_G.Rein1 = true
-_G.Rein2 = true
-_G.Broven1 = true
-_G.Broven2 = true
-_G.Gavin1 = true
-_G.Gavin2 = true
-_G.Elaine1 = true
-_G.Elaine2 = true
-_G.Zeke1 = true
-_G.Zeke2 = true
-_G.Rei1 = true
-_G.Rei2 = true
-_G.Arlo1 = true
-_G.Arlo2 = true
-_G.AutoUpgradeStrength = true
-_G.AutoUpgradeAbility = true
---function
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Sexy Banana",
+   LoadingTitle = "Happy Happy Happy",
+   LoadingSubtitle = "by Sirius",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = nil,
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"Hello"}
+   }
+})
+--
+local MainTab = Window:CreateTab("Main",nil)
+local MainSection = MainTab:CreateSection("Main")
+
 function Blyke1()
-while _G.Blyke1 == true do 
+while _G.Blyke1 == true do
     task.wait(0.00001)
 local args = {
     [1] = workspace:WaitForChild("Enemies"):WaitForChild("Blyke")
@@ -263,11 +267,235 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
   end
 end
-  
-function AutoUpgradeStrength()
-while _G.AutoUpgradeStrength == true do
-    task.wait(0.0001)
-local args = {
+--
+_G.Blyke1 = true
+_G.Blyke2 = true
+_G.Lin1 = true
+_G.Lin2 = true
+_G.Remi1 = true
+_G.Remi2 = true
+_G.Rein1 = true
+_G.Rein2 = true
+_G.Broven1 = true
+_G.Broven2 = true
+_G.Gavin1 = true
+_G.Gavin2 = true
+_G.Elaine1 = true
+_G.Elaine2 = true
+_G.Zeke1 = true
+_G.Zeke2 = true
+_G.Rei1 = true
+_G.Rei2 = true
+_G.Arlo1 = true
+_G.Arlo2 = true
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Blyke1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Blyke1 = Value
+      Blyke1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Blyke2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Blyke2 = Value
+      Blyke2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Lin1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Lin1 = Value
+      Lin1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Lin2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Lin2 = Value
+      Lin2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Remi1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Remi1 = Value
+      Remi1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Remi2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Remi2 = Value
+      Remi2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Rein1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Rein1 = Value
+      Rein1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Rein2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Rein2 = Value
+      Rein2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Broven1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Broven1 = Value
+      Broven1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Broven2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Broven2 = Value
+      Broven2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Gavin1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Gavin1 = Value
+      Gavin1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Gavin2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Gavin2 = Value
+      Gavin2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Elaine1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Elaine1 = Value
+      Elaine1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Elaine2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Elaine2 = Value
+      Elaine2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Zeke1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Zeke1 = Value
+      Zeke1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Zeke2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Zeke2 = Value
+      Zeke2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Rei1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Rei1 = Value
+      Rei1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Rei2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Rei2 = Value
+      Rei2()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Arlo1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Arlo1 = Value
+      Arlo1()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Arlo2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Arlo2 = Value
+      Arlo2()
+   end,
+})
+
+local MiscTab = Window:CreateTab("Misc",nil)
+local MiscSection = MainTab:CreateSection("Misc")
+
+function AutoStrength()
+while _G.AutoStrength == true do
+    task.wait(0.001)
+    local args = {
     [1] = "UpgradeStrength"
 }
 
@@ -275,10 +503,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Inter
   end
 end
 
-function AutoUpgradeAbility()
-while _G.AutoUpgradeAbility == true do
+function AutoAbility()
+while _G.AutoAbility == true do
     task.wait(0.0001)
-local args = {
+    local args = {
     [1] = "UpgradeAbility"
 }
 
@@ -286,210 +514,25 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Inter
   end
 end
 
---tabs 1
-local Tab = Window:MakeTab({
-	Name = "cac",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+_G.AutoStrength = true
+_G.AutoAbility = true
+
+local Toggle = MiscTab:CreateToggle({
+   Name = "Auto Strength",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.AutoStrength = Value
+      AutoStrength()
+   end,
 })
 
-Tab:AddToggle({
-	Name = "Blyke1",
-	Default = false,
-	Callback = function(Value)
-		_G.Blyke1 = Value
-      Blyke1()
-	end
+local Toggle = MiscTab:CreateToggle({
+   Name = "Auto Ability",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.AutoAbility = Value
+      AutoAbility()
+   end,
 })
-
-Tab:AddToggle({
-	Name = "Blyke2",
-	Default = false,
-	Callback = function(Value)
-		_G.Blyke2 = Value
-      Blyke2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Lin1",
-	Default = false,
-	Callback = function(Value)
-		_G.Lin1 = Value
-      Lin1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Lin1",
-	Default = false,
-	Callback = function(Value)
-		_G.Lin2 = Value
-      Lin2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Remi1",
-	Default = false,
-	Callback = function(Value)
-		_G.Remi1 = Value
-      Remi1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Remi2",
-	Default = false,
-	Callback = function(Value)
-		_G.Remi2 = Value
-      Remi2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Rein1",
-	Default = false,
-	Callback = function(Value)
-		_G.Rein1 = Value
-      Rein1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Rein2",
-	Default = false,
-	Callback = function(Value)
-		_G.Rein2 = Value
-      Rein2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Broven1",
-	Default = false,
-	Callback = function(Value)
-		_G.Broven1 = Value
-      Broven1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Broven2",
-	Default = false,
-	Callback = function(Value)
-		_G.Broven2 = Value
-      Broven2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Gavin1",
-	Default = false,
-	Callback = function(Value)
-		_G.Gavin1 = Value
-      Gavin1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Gavin2",
-	Default = false,
-	Callback = function(Value)
-		_G.Gavin2 = Value
-      Gavin2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Elaine1",
-	Default = false,
-	Callback = function(Value)
-		_G.Elaine1 = Value
-      Elaine1()
-	end
-})
-
-
-Tab:AddToggle({
-	Name = "Elaine2",
-	Default = false,
-	Callback = function(Value)
-		_G.Elaine2 = Value
-      Elaine2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Zeke1",
-	Default = false,
-	Callback = function(Value)
-		_G.Zeke1 = Value
-      Zeke1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Zeke2",
-	Default = false,
-	Callback = function(Value)
-		_G.Zeke2 = Value
-      Zeke2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Rei1",
-	Default = false,
-	Callback = function(Value)
-		_G.Rei1 = Value
-      Rei1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Rei2",
-	Default = false,
-	Callback = function(Value)
-		_G.Rei2 = Value
-      Rei2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Arlo1",
-	Default = false,
-	Callback = function(Value)
-		_G.Arlo1 = Value
-      Arlo1()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Arlo2",
-	Default = false,
-	Callback = function(Value)
-		_G.Arlo2 = Value
-      Arlo2()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Auto Upgrade Strength",
-	Default = false,
-	Callback = function(Value)
-		_G.AutoUpgradeStrength = Value
-      AutoUpgradeStrength()
-	end
-})
-
-Tab:AddToggle({
-	Name = "Auto Upgrade Ability",
-	Default = false,
-	Callback = function(Value)
-		_G.AutoUpgradeAbility = Value
-      AutoUpgradeAbility()
-	end
-})
-
-OrionLib:Init()
