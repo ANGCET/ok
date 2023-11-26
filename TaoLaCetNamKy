@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Sexy Banana",
    LoadingTitle = "Happy Happy Happy",
-   LoadingSubtitle = "by Sirius",
+   LoadingSubtitle = "by AngCet",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil,
@@ -494,7 +494,7 @@ local MiscSection = MainTab:CreateSection("Misc")
 
 function AutoStrength()
 while _G.AutoStrength == true do
-    task.wait(0.01)
+    task.wait(0.001)
     local args = {
     [1] = "UpgradeStrength"
 }
@@ -505,7 +505,7 @@ end
 
 function AutoAbility()
 while _G.AutoAbility == true do
-    task.wait(0.01)
+    task.wait(0.001)
     local args = {
     [1] = "UpgradeAbility"
 }
@@ -534,5 +534,285 @@ local Toggle = MiscTab:CreateToggle({
    Callback = function(Value)
       _G.AutoAbility = Value
       AutoAbility()
+   end,
+})
+
+local Main2Tab = Window:CreateTab("Main2",nil)
+local Main2Section = MainTab:CreateSection("Main2")
+
+_G.Narisa1 = true
+_G.Narisa2 = true
+_G.Seraphina1 = true
+_G.Seraphina2 = true
+_G.Val1 = true
+_G.Val2 = true
+_G.Leon1 = true
+_G.Leon2 = true
+_G.Vaughn1 = true
+_G.Vaughn2 = true
+_G.John1 = true
+_G.John2 = true
+
+function Narisa1()
+  while _G.Narisa1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Narisa")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Narisa2()
+  while _G.Narisa2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Narisa" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Seraphina1()
+  while _G.Seraphina1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Seraphina")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Seraphina2()
+  while _G.Seraphina2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Seraphina" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Val1()
+  while _G.Val1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Val")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Val2()
+  while _G.Val2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Val" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Leon1()
+  while _G.Leon1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Leon")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Leon2()
+  while _G.Leon2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Leon" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Vaughn1()
+  while _G.Vaughn1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("Vaughn")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function Vaughn2()
+  while _G.Vaughn2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Vaughn" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function John1()
+  while _G.John1 == true do
+    task.wait(0.1)
+    local args = {
+    [1] = workspace:WaitForChild("Enemies"):WaitForChild("John")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+function John2()
+  while _G.John2 == true do
+    task.wait(0.1)
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("John" ,"Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Damage"):FireServer(unpack(args))
+  end
+end
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Narisa1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Narisa1 = Value
+      Narisa1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Narisa2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Narisa2 = Value
+      Narisa2()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Seraphina1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Seraphina1 = Value
+      Seraphina1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Seraphina2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Seraphina2 = Value
+      Seraphina2()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Val1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Val1 = Value
+      Val1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Val1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Val2 = Value
+      Val2()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Leon1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Leon1 = Value
+      Leon1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Leon2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Leon2 = Value
+      Leon2()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Vaughn1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Vaughn1 = Value
+      Vaughn1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "Vaughn2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.Vaughn2 = Value
+      Vaughn2()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "John1",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.John1 = Value
+      John1()
+   end,
+})
+
+local Toggle = Main2Tab:CreateToggle({
+   Name = "John2",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
+      _G.John2 = Value
+      John2()
    end,
 })
